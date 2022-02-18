@@ -3,44 +3,49 @@
 <html>
 <head>
 	<title>My JSP file</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Welcome to my file!<h1>
+<h1>Welcome to my calculator!<h1>
 
-    <% String  p1 = request.getParameter("x"); %>
-    <% String  p2 = request.getParameter("y"); %>
-    <% String  op = request.getParameter("op"); %>
 
-<%  
+    <%
 
-   int ans;
-   int n1 = Integer.parseInt(x);
-   int n2 = Integer.parseInt(y);
+     int ans, n1, n2;    
+     n1 = Integer.parseInt(request.getParameter("n1"));
+     n2 = Integer.parseInt(request.getParameter("n2"));
+     String  op = request.getParameter("op");
 
 
 
     if(op == "add" && "+")
     {
-    ans = n1 + n2; 
+     ans = n1 + n2; 
+     out.println(n1 + " + " + n2 + " = " + ans + "<BR>");
     }
     else if(op = "sub" && "-")
     {
-        ans = n1 - n2;
+     ans = n1 - n2;
+     out.println(n1 + " - " + n2 + " = " + ans + "<BR>");
 
     }
 
     else if(op = "mul" && "*")
     {
-        ans = n1 * n2;
-
+     ans = n1 * n2;
+     out.println(n1 + " * " + n2 + " = " + ans + "<BR>");
     }
 
     else if(op = "div" && "/")
     {
-        ans = n1 / n2;
+     ans = n1 / n2;
+     out.println(n1 + " / " + n2 + " = " + ans + "<BR>");
     }
 
     else
@@ -48,6 +53,8 @@
         throw new Exception("Please choose number!");  
     }
 %>
+
+
 
 
 <!-- <%
