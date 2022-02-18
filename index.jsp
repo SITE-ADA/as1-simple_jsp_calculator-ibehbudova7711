@@ -23,7 +23,7 @@
 		<br>
 		Enter Operation(add, sub, mul, div): <input type="text" name="op">
 
-		<input type="Submit" value="Submit">
+		<input type="Submit" value="Calculate">
 		<input type="DONE" name="DONE">
 		
 	</form>

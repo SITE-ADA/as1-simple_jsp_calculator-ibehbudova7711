@@ -17,7 +17,7 @@
 
     <%
 
-     int ans, n1, n2;    
+     double ans, n1, n2;    
      n1 = Integer.parseInt(request.getParameter("n1"));
      n2 = Integer.parseInt(request.getParameter("n2"));
      String  op = request.getParameter("op");
@@ -52,7 +52,15 @@
     {
         throw new Exception("Please choose number!");  
     }
+
 %>
+
+<br>
+<br>
+<br>
+
+<a href="/as1-simple_jsp_calculator-ibehbudova7711/Info.jsp">Information about OS and browser</a>
+ 
 
 
 </body>
