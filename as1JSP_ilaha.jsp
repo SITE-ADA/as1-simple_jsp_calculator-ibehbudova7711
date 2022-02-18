@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>My JSP file</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -72,6 +73,14 @@ While (0) {
         out.println(x + " / " + y + " = " + div);
 
      %> -->
+
+
+     
+     
+     
+     
+     %>
+
 
 
 </body>
