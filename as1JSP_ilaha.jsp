@@ -14,27 +14,13 @@
     <% String  p2 = request.getParameter("y"); %>
     <% String  op = request.getParameter("op"); %>
 
-    <%  
-    int ans;
-    int n1 = Integer.parseInt(x);
-    int n2 = Integer.parseInt(y); %>
+<%  
+
+   int ans;
+   int n1 = Integer.parseInt(x);
+   int n2 = Integer.parseInt(y);
 
 
-<%
-    // if (ans == String)
-    // {
-    //     throw new Exception("Please choose number!");  
-
-    // }
-
-
-
-   //  <%while case1: { 
-While (0) {
-
- throw new Exception("Please choose number!");  
-    
-}
 
     if(op == "add" && "+")
     {
@@ -52,9 +38,14 @@ While (0) {
 
     }
 
-    else 
+    else if(op = "div" && "/")
     {
         ans = n1 / n2;
+    }
+
+    else
+    {
+        throw new Exception("Please choose number!");  
     }
 %>
 
@@ -79,7 +70,7 @@ While (0) {
      
      
      
-     %>
+    
 
 
 
