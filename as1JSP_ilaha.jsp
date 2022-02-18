@@ -24,25 +24,25 @@
 
 
 
-    if(op == "add" && "+")
+    if(op.equals("add"))
     {
      ans = n1 + n2; 
      out.println(n1 + " + " + n2 + " = " + ans + "<BR>");
     }
-    else if(op = "sub" && "-")
+    else if(op.equals("sub"))
     {
      ans = n1 - n2;
      out.println(n1 + " - " + n2 + " = " + ans + "<BR>");
 
     }
 
-    else if(op = "mul" && "*")
+    else if(op.equals("mul"))
     {
      ans = n1 * n2;
      out.println(n1 + " * " + n2 + " = " + ans + "<BR>");
     }
 
-    else if(op = "div" && "/")
+    else if(op.equals("div"))
     {
      ans = n1 / n2;
      out.println(n1 + " / " + n2 + " = " + ans + "<BR>");
@@ -53,32 +53,6 @@
         throw new Exception("Please choose number!");  
     }
 %>
-
-
-
-
-<!-- <%
-        int x = 10, y = 2, add, sub, mul, div;
-
-        add = x + y;
-        sub = x - y;
-        mul = x * y;
-        div = x / y;
-
-        out.println(x + " + " + y + " = " + add + "<BR>");
-        out.println(x + " - " + y + " = " + sub + "<BR>");
-        out.println(x + "* " + y + " = " + mul + "<BR>");
-        out.println(x + " / " + y + " = " + div);
-
-     %> -->
-
-
-     
-     
-     
-     
-    
-
 
 
 </body>

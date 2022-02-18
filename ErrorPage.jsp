@@ -8,30 +8,21 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<style>
-        body {background-color: powderblue;}
-        h1   {color: blue;}
-        p    {color: pink;}
-    </style>
+
+	<link rel="stylesheet" href="style.css">
+
+
+	<div class = "error">
+        
+    </div> 
+
 
 </head>
 
 <body>
 
-   <h1>Your error is:</h1>
-
-   <error-page>
-   <error-code>404</error-code>
-   <location>/ErrorPage.jsp</location>
-   </error-page>
-   
-   <error-page>
-   <exception-type>java.lang.Throwable</exception-type>
-   <location>/ErrorPage.jsp</location>
-   </error-page>
-
-	<p>${pageContext.exception}</p>
+   <h1>Now it is the right place :) - Your error is:</h1>
+   <p>${pageContext.exception}</p>
 
 </body>
 

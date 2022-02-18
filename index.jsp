@@ -18,21 +18,16 @@
 	<form action="as1JSP_ilaha.jsp" method="post">
 
 		Enter First Operand: <input type="text" name="n1"><br>
+		<br>
 		Enter Second Operand: <input type="text" name="n2"><br>
-		Enter Operation: <input type="text" name="op">
+		<br>
+		Enter Operation(add, sub, mul, div): <input type="text" name="op">
 
-		<input type="Submit" value="SUbmit">
+		<input type="Submit" value="Submit">
 		<input type="DONE" name="DONE">
 		
 	</form>
 	
-
-	<div class="style">
-         <% =n1 %>
-         <% =n2 %>
-         <% =ans %>   
-     </div>
-
 
 </body>
 </html>
